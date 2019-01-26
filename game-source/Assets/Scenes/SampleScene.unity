@@ -693,7 +693,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    name: Name
     sentences:
     - Teleportatoes
 --- !u!4 &1281239409
@@ -740,6 +739,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogText: {fileID: 717408287}
+  animator: {fileID: 0}
 --- !u!4 &1970571403
 Transform:
   m_ObjectHideFlags: 0
