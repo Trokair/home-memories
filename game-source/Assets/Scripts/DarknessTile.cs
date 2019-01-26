@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using Zenject;
 
-public class Player : MonoBehaviour
+public class DarknessTile : MonoBehaviour
 {
     [Inject]
-    Controls _controls;
-  
+    private Timer _timer;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +16,6 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _controls.HandleMovement(this.transform);
+        _timer.Update(this);
     }
 }

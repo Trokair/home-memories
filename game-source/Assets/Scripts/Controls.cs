@@ -5,22 +5,23 @@
  */
 public class Controls
 {
+    private float speed = 0.2f;
    public void HandleMovement(Transform character)
     {
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.UpArrow))
         {
-            character.transform.Translate(0.0f, 1f, 0f);
+            character.transform.Translate(0.0f, speed, 0f);
         }
-        else if (Input.GetKeyDown(KeyCode.DownArrow))
+        else if (Input.GetKey(KeyCode.DownArrow))
         {
-            character.transform.Translate(0f, -1f, 0f);
+            character.transform.Translate(0f, -speed, 0f);
         }
-        else if (Input.GetKeyDown(KeyCode.LeftArrow))
+        else if (Input.GetKey(KeyCode.LeftArrow))
         {
-            character.transform.Translate(-1f, 0f, 0f);
-        } else if (Input.GetKeyDown(KeyCode.RightArrow))
+            character.transform.Translate(-speed, 0f, 0f);
+        } else if (Input.GetKey(KeyCode.RightArrow))
         {
-            character.transform.Translate(1f, 0f, 0f);
+            character.transform.Translate(speed, 0f, 0f);
         }
     }
 }
