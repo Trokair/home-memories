@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
 {
     [Inject]
     Controls _controls;
+    [Inject]
+    Timer _timer;
   
     // Start is called before the first frame update
     void Start()
@@ -18,5 +20,6 @@ public class Player : MonoBehaviour
     void Update()
     {
         _controls.HandleMovement(this.transform);
+        _timer.Update(this);
     }
 }
