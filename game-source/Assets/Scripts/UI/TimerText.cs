@@ -7,6 +7,7 @@ using Zenject;
 /**
  * Shows the current accumulated time
  */
+[RequireComponent(typeof(Text))]
 public class TimerText : MonoBehaviour
 {
     [Inject]
