@@ -145,7 +145,7 @@ MonoBehaviour:
     sentences:
     - Ugh...I was too nervous...
     - and I was having fun with my friends...
-    - end I just let her be.
+    - In the end I just let her be.
   DialogToManage: {fileID: 0}
 --- !u!4 &104677543
 Transform:
@@ -485,3 +485,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc03d83259c1a2249b8f7e1cab326df5, type: 3}
+--- !u!1 &1495725920 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4200493962605967471, guid: cc03d83259c1a2249b8f7e1cab326df5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1495725919}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1495725921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495725920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed496b579294a894b97194af74e7344d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
