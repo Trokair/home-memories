@@ -36,6 +36,7 @@ public class DialogManager : MonoBehaviour
 
     void Update()
     {
+        if (SceneManager.GetActiveScene().name == "MainMenu") Object.DestroyImmediate(this.transform.root.gameObject);
         //If the dialog box is open, pressing the E key will display the next sentence.
         if (animator.GetBool("IsOpen") == true)
         {
