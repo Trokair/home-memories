@@ -7,6 +7,7 @@ public class Door : MonoBehaviour
 {
     public string Level;
     public int CurrentKarma;
+    private bool onTrigger = false;
 
     // Start is called before the first frame update
     //voidStart()
@@ -16,14 +17,20 @@ public class Door : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
+        onTrigger = true;
         //Door cracks open when the player approaches it
         //  crack door
         //  play Door Crack audio
 
+       
+    }
+
+    void Update()
+    {
         //If the player presses the "e" key it loads the next level
-        if (Input.GetKeyDown("e"))
+        if (onTrigger && Input.GetKeyDown("e"))
         {
-            
+
             //Load the scene set for this door
             SceneManager.LoadScene(Level);
 
@@ -39,6 +46,7 @@ public class Door : MonoBehaviour
     {
         //close door
         //   play audio
+        onTrigger = false;
     }
 
 }
