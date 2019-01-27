@@ -189,6 +189,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 5.497734
       objectReference: {fileID: 0}
+    - target: {fileID: 7730199214093765297, guid: 04b9589fcdb7d094297e4323a1499b30,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04b9589fcdb7d094297e4323a1499b30, type: 3}
 --- !u!1 &110876512
@@ -224,7 +229,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialog:
     sentences:
-    - What
+    - " Huh\u2026I\u2026I can move?"
+    - "Well\u2026I might as well get out and stretch my legs.\r"
+  DialogToManage: {fileID: 0}
 --- !u!61 &110876514
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -258,7 +265,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110876512}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -757,7 +764,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b51da63d0d179f45973ca605eb4d5b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Character: {fileID: 716610957}
   dialogText: {fileID: 1832043811}
+  FirstTimeDialog: 1
   animator: {fileID: 936408433}
 --- !u!1 &920320642
 GameObject:
