@@ -14,7 +14,7 @@ public class DialogTrigger : MonoBehaviour
             if (DialogManager.ReadyForTrigger == "true")
             {
 
-
+                Debug.Log("E");
                 TriggerDialog();
             }
         }

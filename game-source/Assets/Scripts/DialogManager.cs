@@ -14,9 +14,9 @@ public class DialogManager : MonoBehaviour
 
     void Start()
     {
-
-    //Create a list for all the pre-made sentences.
-    sentences = new Queue<string>();
+        animator.SetBool("IsOpen", false);
+        //Create a list for all the pre-made sentences.
+        sentences = new Queue<string>();
 
     //Ready the Dialog Trigger to display dialog.
     ReadyForTrigger = "true";
@@ -31,6 +31,7 @@ public class DialogManager : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 DisplayNextSentence();
+                Debug.Log("Display'ed next sentence");
             }
         }
     }
@@ -47,7 +48,9 @@ public class DialogManager : MonoBehaviour
         //This loads each sentence into the queue.
         foreach (string sentence in dialog.sentences)
         {
-          sentences.Enqueue(sentence);
+            Debug.Log("Display'ed next sentence");
+            sentences.Enqueue(sentence);
+
         }
     }
 
@@ -64,11 +67,13 @@ public class DialogManager : MonoBehaviour
         //This takes the next sentence out of the queue and prepares it for use
         string sentence = sentences.Dequeue();
         dialogText.text = sentence;
+        Debug.Log(sentence);
     }
 
     void EndDialog()
     {
         //This closes the dialog box
         animator.SetBool("IsOpen", false);
+        Debug.Log("End");
     }
 }
