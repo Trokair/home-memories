@@ -19,7 +19,7 @@ public class DialogManager : MonoBehaviour
     public void ReadyForDialog()
     {
         animator.SetBool("IsOpen", false);
-
+        FirstTimeDialog = true;
         //Create a list for all the pre-made sentences.
         sentences = new Queue<string>();
 
@@ -39,8 +39,10 @@ public class DialogManager : MonoBehaviour
         //If the dialog box is open, pressing the E key will display the next sentence.
         if (animator.GetBool("IsOpen") == true)
         {
-            if(FirstTimeDialog == true)
+            Debug.Log("The IsOpen is true");
+            if (FirstTimeDialog == true)
             {
+                Debug.Log("It's my first time");
                 DisplayNextSentence();
                 FirstTimeDialog = false;
             }
