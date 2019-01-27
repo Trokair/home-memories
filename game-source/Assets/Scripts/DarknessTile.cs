@@ -18,7 +18,7 @@ public class DarknessTile : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         animator.speed = DarkeningSpeed;
         //_timer.Update(this);
