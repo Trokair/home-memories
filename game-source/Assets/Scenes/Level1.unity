@@ -224,11 +224,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialog:
     sentences:
-    - "Hello\t"
-    - Wht
-    - Is
-    - Up
-    - 
+    - What
 --- !u!61 &110876514
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -749,25 +745,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a60d32d965f161d41824a9cea3c63607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &902455928
-Animator:
-  serializedVersion: 3
+--- !u!114 &902455928
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 902455922}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0a2c0e53d1f00234a8c977ad916612ca, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b51da63d0d179f45973ca605eb4d5b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogText: {fileID: 1832043811}
+  animator: {fileID: 936408433}
 --- !u!1 &920320642
 GameObject:
   m_ObjectHideFlags: 0
@@ -811,12 +802,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &936408431 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4073516342448947108, guid: fa6659ef3e1f9bc47b31612694660321,
-    type: 3}
-  m_PrefabInstance: {fileID: 1346520494}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &936408432 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4073516342448947109, guid: fa6659ef3e1f9bc47b31612694660321,
@@ -829,20 +814,6 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 1346520494}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &936408436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 936408431}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b51da63d0d179f45973ca605eb4d5b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogText: {fileID: 1832043811}
-  animator: {fileID: 936408433}
 --- !u!1 &957161303
 GameObject:
   m_ObjectHideFlags: 0
@@ -934,6 +905,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Panel
       objectReference: {fileID: 0}
+    - target: {fileID: 4073516342448947108, guid: fa6659ef3e1f9bc47b31612694660321,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4073516342448947109, guid: fa6659ef3e1f9bc47b31612694660321,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -997,7 +973,7 @@ PrefabInstance:
     - target: {fileID: 4073516342448947109, guid: fa6659ef3e1f9bc47b31612694660321,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -13.565994
+      value: -13.5660095
       objectReference: {fileID: 0}
     - target: {fileID: 4073516342448947109, guid: fa6659ef3e1f9bc47b31612694660321,
         type: 3}
@@ -1039,10 +1015,25 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4073516342448947112, guid: fa6659ef3e1f9bc47b31612694660321,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7093f8ee697b20d4b89c00957abef476, type: 2}
     - target: {fileID: 4073516340701627121, guid: fa6659ef3e1f9bc47b31612694660321,
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 1.3000183
+      objectReference: {fileID: 0}
+    - target: {fileID: 4073516342012894157, guid: fa6659ef3e1f9bc47b31612694660321,
+        type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4073516342012894159, guid: fa6659ef3e1f9bc47b31612694660321,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa6659ef3e1f9bc47b31612694660321, type: 3}
