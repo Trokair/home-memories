@@ -9,15 +9,15 @@ public class DialogTrigger : MonoBehaviour
     public void Update()
     {
         //This is what starts the dialog box. Replace this with your prefered trigger
-        if (Input.GetKeyDown(KeyCode.E))
-        {
+        //if (Input.GetKeyDown(KeyCode.E))
+        //{
             if (DialogManager.ReadyForTrigger == "true")
             {
 
-                Debug.Log("E");
+            //    Debug.Log("E");
                 TriggerDialog();
             }
-        }
+       // }
     }
 
     public void TriggerDialog()
