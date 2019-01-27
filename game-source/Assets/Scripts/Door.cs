@@ -28,7 +28,7 @@ public class Door : MonoBehaviour
     void Update()
     {
         //If the player presses the "e" key it loads the next level
-        if (onTrigger && Input.GetKeyDown("e"))
+        if (onTrigger && Input.GetKeyDown(KeyCode.Space))
         {
             
             //Load the scene set for this door
