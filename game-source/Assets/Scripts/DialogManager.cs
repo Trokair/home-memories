@@ -14,19 +14,18 @@ public class DialogManager : MonoBehaviour
     public bool FirstTimeDialog = true;
     public static string ReadyForTrigger = "false";
     public Animator animator;
+    private Queue<string> sentences = new Queue<string>();
 
-    private Queue<string> sentences;
-
-    void Start()
+    public void ReadyForDialog()
     {
         animator.SetBool("IsOpen", false);
-        
+
         //Create a list for all the pre-made sentences.
         sentences = new Queue<string>();
 
-    //Ready the Dialog Trigger to display dialog.
-    ReadyForTrigger = "true";
-        
+        //Ready the Dialog Trigger to display dialog.
+        ReadyForTrigger = "true";
+
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)

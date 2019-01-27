@@ -121,7 +121,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4931835}
-  - component: {fileID: 4931834}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -129,22 +128,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &4931834
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4931833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b51da63d0d179f45973ca605eb4d5b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Character: {fileID: 0}
-  dialogText: {fileID: 0}
-  FirstTimeDialog: 1
-  animator: {fileID: 0}
 --- !u!4 &4931835
 Transform:
   m_ObjectHideFlags: 0
@@ -421,6 +404,7 @@ MonoBehaviour:
     - This is my grade school playground. Biff was going at Sammy really hard.
     - "Biff: Dweeb, I\u2019m going to make you eat dirt!"
     - "Sammy: No, Biff! I\u2019m allergic to worms!"
+  DialogToManage: {fileID: 0}
 --- !u!4 &790372530
 Transform:
   m_ObjectHideFlags: 0

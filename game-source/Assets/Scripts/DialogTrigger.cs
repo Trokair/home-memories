@@ -5,13 +5,22 @@ using UnityEngine;
 public class DialogTrigger : MonoBehaviour
 {
     public Dialog dialog;
-
+    public DialogManager DialogToManage;
+    private void Start()
+    {
+      
+    }
     public void Update()
     {
         //This is what starts the dialog box. Replace this with your prefered trigger
         //if (Input.GetKeyDown(KeyCode.E))
         //{
-            if (DialogManager.ReadyForTrigger == "true")
+        if(DialogToManage == null)
+        {
+            FindObjectOfType<DialogManager>().ReadyForDialog();
+            DialogToManage = FindObjectOfType<DialogManager>();
+        }
+            if (DialogManager.ReadyForTrigger == "true" && DialogToManage != null)
             {
 
             //    Debug.Log("E");
@@ -23,6 +32,7 @@ public class DialogTrigger : MonoBehaviour
     public void TriggerDialog()
     {
         //This tells the Dialog Manager to run the dialog.
+        
         FindObjectOfType<DialogManager>().StartDialog(dialog);
 
     }

@@ -208,7 +208,6 @@ GameObject:
   - component: {fileID: 110876515}
   - component: {fileID: 110876514}
   - component: {fileID: 110876513}
-  - component: {fileID: 110876517}
   m_Layer: 0
   m_Name: DialogForScene
   m_TagString: Untagged
@@ -232,6 +231,7 @@ MonoBehaviour:
     sentences:
     - " Huh\u2026I\u2026I can move?"
     - "Well\u2026I might as well get out and stretch my legs.\r"
+  DialogToManage: {fileID: 0}
 --- !u!61 &110876514
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -320,22 +320,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &110876517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 110876512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b51da63d0d179f45973ca605eb4d5b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Character: {fileID: 716610957}
-  dialogText: {fileID: 1832043811}
-  FirstTimeDialog: 1
-  animator: {fileID: 936408433}
 --- !u!1 &164897068
 GameObject:
   m_ObjectHideFlags: 0
@@ -667,6 +651,7 @@ GameObject:
   - component: {fileID: 902455924}
   - component: {fileID: 902455923}
   - component: {fileID: 902455927}
+  - component: {fileID: 902455928}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -767,6 +752,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a60d32d965f161d41824a9cea3c63607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &902455928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902455922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b51da63d0d179f45973ca605eb4d5b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Character: {fileID: 716610957}
+  dialogText: {fileID: 1832043811}
+  FirstTimeDialog: 1
+  animator: {fileID: 936408433}
 --- !u!1 &920320642
 GameObject:
   m_ObjectHideFlags: 0
